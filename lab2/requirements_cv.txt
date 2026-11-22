@@ -1,0 +1,12 @@
+# Tested with Python 3.13; CUDA installation is in requirements.cuda.txt.
+ultralytics==8.4.20
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.2.6
+scipy==1.14.1
+matplotlib==3.11.1
+pillow==11.0.0
+pyyaml==6.0.2
+requests>=2.32,<3
+jupyterlab>=4,<5
+ipykernel>=6,<8
