@@ -1,0 +1,375 @@
+{
+  "model_info": {
+    "ultralytics": "8.4.20",
+    "weights": "yolo26n.pt",
+    "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "size_mb": 5.287602424621582,
+    "params": 2572280,
+    "n_classes_coco": 80,
+    "input_size": 640,
+    "latency_runs": 15,
+    "latency_ms": 22.060413338476792,
+    "latency_std_ms": 2.0471548645040736
+  },
+  "blocks": {
+    "backbone": 1365472,
+    "neck": 897152,
+    "head": 309656
+  },
+  "feature_shapes": [
+    [
+      1,
+      64,
+      80,
+      80
+    ],
+    [
+      1,
+      128,
+      40,
+      40
+    ],
+    [
+      1,
+      256,
+      20,
+      20
+    ]
+  ],
+  "cleaning": {
+    "train": {
+      "clipped": 4,
+      "removed": 0
+    },
+    "val": {
+      "clipped": 1,
+      "removed": 0
+    },
+    "test": {
+      "clipped": 1,
+      "removed": 0
+    }
+  },
+  "data_stats": {
+    "train": {
+      "images": 360,
+      "objects": 396,
+      "counts": [
+        31,
+        30,
+        44,
+        30,
+        38,
+        30,
+        31,
+        34,
+        30,
+        31,
+        37,
+        30
+      ],
+      "objects_per_image": 1.1,
+      "median_box_area": 0.5305574205186632
+    },
+    "val": {
+      "images": 120,
+      "objects": 134,
+      "counts": [
+        10,
+        10,
+        16,
+        11,
+        13,
+        10,
+        10,
+        10,
+        10,
+        11,
+        13,
+        10
+      ],
+      "objects_per_image": 1.1166666666666667,
+      "median_box_area": 0.5370966593424479
+    },
+    "test": {
+      "images": 120,
+      "objects": 139,
+      "counts": [
+        10,
+        10,
+        19,
+        10,
+        12,
+        12,
+        10,
+        11,
+        10,
+        10,
+        15,
+        10
+      ],
+      "objects_per_image": 1.1583333333333334,
+      "median_box_area": 0.48559570312500006
+    }
+  },
+  "exact_duplicates": {
+    "train / val": 0,
+    "train / test": 0,
+    "val / test": 0
+  },
+  "roundtrip_max_error_px": 0.0002593994140625,
+  "validation": {
+    "map50": 0.8593350227195368,
+    "map50_95": 0.7464846664757087,
+    "precision": 0.7125640305995807,
+    "recall": 0.8630959069402041,
+    "per_class": {
+      "barbell": {
+        "precision": 0.6897838203537049,
+        "recall": 0.6693514610611148,
+        "map50": 0.7160998650472333,
+        "map50_95": 0.5862966321782381
+      },
+      "cablemachine": {
+        "precision": 0.8320261780923018,
+        "recall": 0.9,
+        "map50": 0.9719230769230767,
+        "map50_95": 0.8497476890925165
+      },
+      "dumbbell": {
+        "precision": 0.5402656841889653,
+        "recall": 0.75,
+        "map50": 0.6476689998583856,
+        "map50_95": 0.500211495836813
+      },
+      "elliptical": {
+        "precision": 0.5875351311224083,
+        "recall": 0.7272727272727273,
+        "map50": 0.6891122939560439,
+        "map50_95": 0.6015563261820416
+      },
+      "kettlebell": {
+        "precision": 0.6625912788448309,
+        "recall": 0.9070888631604908,
+        "map50": 0.8304292508714527,
+        "map50_95": 0.7184006890217931
+      },
+      "legpress": {
+        "precision": 0.7414043387566759,
+        "recall": 0.8621790905293739,
+        "map50": 0.9164285714285714,
+        "map50_95": 0.79656987012987
+      },
+      "smithmachine": {
+        "precision": 0.8019407002291905,
+        "recall": 0.9,
+        "map50": 0.930064935064935,
+        "map50_95": 0.8624561292366171
+      },
+      "stationarybike": {
+        "precision": 0.9892098154317663,
+        "recall": 0.9,
+        "map50": 0.9616666666666668,
+        "map50_95": 0.897419917061215
+      },
+      "swissball": {
+        "precision": 0.6870919322389214,
+        "recall": 1.0,
+        "map50": 0.9564285714285713,
+        "map50_95": 0.8225399159663864
+      },
+      "treadmill": {
+        "precision": 0.5378977309140197,
+        "recall": 0.8181818181818182,
+        "map50": 0.8408257575757577,
+        "map50_95": 0.7641917457025011
+      },
+      "weightplate": {
+        "precision": 0.7274684949441104,
+        "recall": 0.9230769230769231,
+        "map50": 0.9018268292682927,
+        "map50_95": 0.6991563448209113
+      },
+      "yogamat": {
+        "precision": 0.7535532620780737,
+        "recall": 1.0,
+        "map50": 0.9495454545454545,
+        "map50_95": 0.8592692424796006
+      }
+    }
+  },
+  "error_shares": {
+    "class": 0.2037037037037037,
+    "localization": 0.037037037037037035,
+    "background": 0.35185185185185186,
+    "missed": 0.4074074074074074
+  },
+  "errors_by_class": {
+    "barbell": {
+      "tp": 5,
+      "class": 0,
+      "localization": 0,
+      "background": 2,
+      "missed": 4
+    },
+    "cablemachine": {
+      "tp": 10,
+      "class": 0,
+      "localization": 0,
+      "background": 1,
+      "missed": 0
+    },
+    "dumbbell": {
+      "tp": 11,
+      "class": 3,
+      "localization": 1,
+      "background": 3,
+      "missed": 4
+    },
+    "elliptical": {
+      "tp": 7,
+      "class": 2,
+      "localization": 0,
+      "background": 2,
+      "missed": 2
+    },
+    "kettlebell": {
+      "tp": 10,
+      "class": 0,
+      "localization": 0,
+      "background": 1,
+      "missed": 3
+    },
+    "legpress": {
+      "tp": 6,
+      "class": 3,
+      "localization": 0,
+      "background": 1,
+      "missed": 4
+    },
+    "smithmachine": {
+      "tp": 10,
+      "class": 0,
+      "localization": 0,
+      "background": 1,
+      "missed": 0
+    },
+    "stationarybike": {
+      "tp": 5,
+      "class": 0,
+      "localization": 0,
+      "background": 0,
+      "missed": 4
+    },
+    "swissball": {
+      "tp": 9,
+      "class": 1,
+      "localization": 0,
+      "background": 1,
+      "missed": 0
+    },
+    "treadmill": {
+      "tp": 10,
+      "class": 0,
+      "localization": 0,
+      "background": 4,
+      "missed": 0
+    },
+    "weightplate": {
+      "tp": 11,
+      "class": 2,
+      "localization": 1,
+      "background": 1,
+      "missed": 1
+    },
+    "yogamat": {
+      "tp": 10,
+      "class": 0,
+      "localization": 0,
+      "background": 2,
+      "missed": 0
+    }
+  },
+  "heuristic_feature_count": 24,
+  "coco_predicted_counts": {
+    "bottle": 233,
+    "cup": 89,
+    "person": 1203,
+    "cell phone": 91,
+    "wine glass": 20,
+    "toothbrush": 119,
+    "vase": 113,
+    "refrigerator": 53,
+    "parking meter": 80,
+    "book": 532,
+    "bus": 81,
+    "cat": 97,
+    "cake": 35,
+    "car": 252,
+    "bowl": 37,
+    "dining table": 57,
+    "handbag": 99,
+    "remote": 61,
+    "suitcase": 257,
+    "dog": 47,
+    "hair drier": 32,
+    "tie": 87,
+    "tv": 55,
+    "train": 360,
+    "truck": 256,
+    "toilet": 89,
+    "airplane": 218,
+    "laptop": 42,
+    "mouse": 60,
+    "keyboard": 44,
+    "motorcycle": 114,
+    "sink": 34,
+    "bed": 86,
+    "scissors": 53,
+    "knife": 40,
+    "chair": 114,
+    "couch": 26,
+    "oven": 22,
+    "fork": 10,
+    "microwave": 14,
+    "bench": 348,
+    "boat": 314,
+    "clock": 131,
+    "backpack": 112,
+    "teddy bear": 39,
+    "donut": 38,
+    "umbrella": 76,
+    "sports ball": 55,
+    "bird": 43,
+    "potted plant": 154,
+    "frisbee": 35,
+    "fire hydrant": 98,
+    "traffic light": 487,
+    "skis": 282,
+    "kite": 55,
+    "bicycle": 70,
+    "snowboard": 123,
+    "skateboard": 78,
+    "baseball bat": 39,
+    "horse": 20,
+    "surfboard": 37,
+    "stop sign": 33,
+    "apple": 24,
+    "toaster": 6,
+    "cow": 7,
+    "sheep": 1,
+    "tennis racket": 9,
+    "hot dog": 9,
+    "spoon": 11,
+    "carrot": 6,
+    "banana": 35,
+    "zebra": 6,
+    "baseball glove": 13,
+    "giraffe": 4,
+    "sandwich": 4,
+    "orange": 9,
+    "bear": 3,
+    "broccoli": 1,
+    "elephant": 1
+  }
+}

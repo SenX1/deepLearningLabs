@@ -1,0 +1,10 @@
+data/
+runs/
+runs_hw2/
+.venv*/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+
+*.pt
+!artifacts/*.pt
